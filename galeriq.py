@@ -31,7 +31,7 @@ if st.session_state.animals:
 remove_name = st.selectbox("izberi jivotno za premahvane", names)
 
 if st.button("Premahvane"):
-  for a int st.session_state.animals:
+  for a in st.session_state.animals:
      if a["ime"] == remove_name:
        st.session_state.animals.remove(a)
        break
